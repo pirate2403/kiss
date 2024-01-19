@@ -14,7 +14,7 @@ interface Props {
 }
 
 const CLASS_NAMES = {
-  base: "rounded-[5px] p-regular text-[12px] w-[348px] flex items-center gap-[14px] px-[20px] py-[12px] text-white",
+  base: "rounded-[5px] p-regular text-[12px] flex items-center gap-[14px] px-[20px] py-[12px] text-white",
   type: {
     success: "bg-success",
     message: "bg-message",
@@ -35,7 +35,7 @@ const ICONS = {
 function Notification({ type = "success", className, message, title }: Props) {
   return (
     <div className={cn(CLASS_NAMES.base, CLASS_NAMES.type[type], className)}>
-      <>{ICONS[type]}</>
+      <div className="min-w-5">{ICONS[type]}</div>
       <div className="flex flex-col gap-0 w-[248px]">
         <span className="p-bold text-[14px] text-white">{title}</span>
         <span className="p-regular text-[12px] text-white leading-4">

@@ -1,8 +1,23 @@
 import { memo } from "react";
 
-function MainLogo() {
+export const LOGO_SIZE = {
+  sm: "sm",
+  lg: "lg",
+} as const;
+
+interface Props {
+  size?: keyof typeof LOGO_SIZE;
+}
+
+const CLASS_NAMES = {
+  [LOGO_SIZE.sm]: "w-[149px] h-[59px]",
+  [LOGO_SIZE.lg]: "w-[224px] h-[89px]",
+};
+
+function MainLogo({ size = LOGO_SIZE.lg }: Props) {
   return (
     <svg
+      className={CLASS_NAMES[size]}
       width="224"
       height="89"
       viewBox="0 0 224 89"
@@ -45,4 +60,4 @@ function MainLogo() {
   );
 }
 
-export default memo(MainLogo);
+export default memo<Props>(MainLogo);

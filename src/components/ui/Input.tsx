@@ -10,7 +10,7 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
 const CLASS_NAMES = {
   base: "relative rounded-[5px] p-medium text-brand-green border-brand-green border-[1px] flex items-center p-[16px] mt-[8px]",
   label: "absolute top-[-12px] pointer-events-none z-10 px-[4px]",
-  line: "absolute z-[-1] px-[4px] bg-white h-[1px] w-full top-[11px] left-0",
+  line: "absolute z-[-1] px-[4px] bg-white w-full top-[10px] left-0 border-b-8 border-white",
   input:
     "outline-0 border-0 p-medium rounded-[5px] text-gray-50 placeholder:text-gray-20 w-full bg-transparent",
   disabled: "bg-gray-5 border-gray-10 text-gray-50",
