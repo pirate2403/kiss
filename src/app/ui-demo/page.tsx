@@ -1,5 +1,5 @@
 import { memo } from "react";
-import MainLogo, { LOGO_SIZE } from "@/components/ui/MainLogo";
+import MainLogo from "@/components/ui/MainLogo";
 import Button from "@/components/ui/Button";
 import Tag from "@/components/ui/Tag";
 import Notification from "@/components/ui/Notification";
