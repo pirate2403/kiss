@@ -8,7 +8,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const CLASS_NAMES = {
-  base: "rounded-[5px] p-bold px-[12px]",
+  base: "rounded-[5px] p-bold px-[12px] active:brightness-95",
   disabled: "disabled:bg-gray-10 disabled:border-gray-10 disabled:text-gray-40",
   size: {
     s: "py-[10px] w-[129px] text-[12px] border-[1px]",
