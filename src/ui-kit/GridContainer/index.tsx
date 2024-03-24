@@ -2,10 +2,10 @@ import { memo, PropsWithChildren } from "react";
 import cn from "classnames";
 
 const CLASS_NAMES = {
-  base: "grid",
-  lg: "lg:grid-cols-12 lg:gap-x-[30px]",
-  md: "md:grid-cols-6 md:gap-x-[24px]",
-  sm: "grid-cols-4 gap-x-[20px] ",
+  base: "grid auto-rows-max",
+  lg: "lg:grid-cols-12 lg:gap-x-[30px] lg:px-16",
+  md: "md:grid-cols-6 md:gap-x-[24px] md:px-8",
+  sm: "grid-cols-4 gap-x-[20px] px-5",
 };
 
 interface Props {

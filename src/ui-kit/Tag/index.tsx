@@ -1,4 +1,4 @@
-import { memo, PropsWithChildren } from "react";
+import { memo } from "react";
 import cn from "classnames";
 
 interface Props {

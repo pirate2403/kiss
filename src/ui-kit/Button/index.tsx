@@ -1,16 +1,16 @@
-import { ButtonHTMLAttributes, memo, ReactNode } from "react";
+import { ButtonHTMLAttributes, memo } from "react";
 import cn from "classnames";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  size?: "s" | "l" | "xl";
+  size?: "xs" | "s" | "l" | "xl";
   customType?: "primary" | "secondary" | "danger";
-  icon?: ReactNode;
 }
 
 const CLASS_NAMES = {
-  base: "rounded-[5px] p-bold px-[12px] active:brightness-95",
+  base: "rounded-[5px] p-bold active:brightness-95",
   disabled: "disabled:bg-gray-10 disabled:border-gray-10 disabled:text-gray-40",
   size: {
+    xs: "w-fit px-[4px] text-[8px] border-[1px]",
     s: "py-[10px] w-[129px] text-[12px] border-[1px]",
     l: "py-[24px] w-[210px] text-[18px] border-[2px]",
     xl: "py-[24px] w-[437px] text-[18px] border-[2px]",
@@ -26,7 +26,6 @@ function Button({
   customType = "primary",
   size = "s",
   children,
-  icon,
   className,
   ...props
 }: Props) {
@@ -41,10 +40,7 @@ function Button({
       )}
       {...props}
     >
-      <div className="flex items-center justify-center gap-2">
-        {children}
-        {icon}
-      </div>
+      <div className="flex items-center justify-center gap-2">{children}</div>
     </button>
   );
 }
