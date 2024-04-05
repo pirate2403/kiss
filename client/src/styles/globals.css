@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+@layer components {
+    .p-light {
+        color: theme('colors.brand-black');
+        font-weight: theme('fontWeight.light');
+        line-height: theme('lineHeight.base');
+        font-size: 18px;
+        font-style: normal;
+    }
+
+    .p-regular {
+        color: theme('colors.brand-black');
+        font-weight: theme('fontWeight.regular');
+        line-height: theme('lineHeight.base');
+        font-size: 18px;
+        font-style: normal;
+    }
+
+    .p-medium {
+        color: theme('colors.brand-black');
+        font-weight: theme('fontWeight.medium');
+        line-height: theme('lineHeight.base');
+        font-size: 18px;
+        font-style: normal;
+    }
+
+    .p-bold {
+        color: theme('colors.brand-black');
+        font-weight: theme('fontWeight.bold');
+        line-height: theme('lineHeight.base');
+        font-size: 18px;
+        font-style: normal;
+    }
+
+    .h2-regular {
+        color: theme('colors.brand-black');
+        font-weight: theme('fontWeight.regular');
+        line-height: theme('lineHeight.base');
+        font-size: 36px;
+        font-style: normal;
+    }
+
+    .h1-regular {
+        color: theme('colors.brand-black');
+        font-weight: theme('fontWeight.regular');
+        line-height: theme('lineHeight.base');
+        font-size: 42px;
+        font-style: normal;
+    }
+
+    .h1-bold {
+        color: theme('colors.brand-black');
+        font-weight: theme('fontWeight.bold');
+        line-height: theme('lineHeight.base');
+        font-size: 42px;
+        font-style: normal;
+    }
+}
