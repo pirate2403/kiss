@@ -1,8 +1,8 @@
 import { ACCESS_TOKEN_SECRET, REFRESH_TOKEN_SECRET } from "../../environment";
 import { ERROR_TYPES } from "../error/error.contsants";
 
-export const ACCESS_EXPIRES_IN = "30s";
-export const REFRESH_EXPIRES_IN = "1m";
+export const ACCESS_EXPIRES_IN = "15m";
+export const REFRESH_EXPIRES_IN = "10d";
 
 export const VERIFY_TYPE = {
   access: "access",

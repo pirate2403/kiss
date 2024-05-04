@@ -2,7 +2,7 @@
 
 import { memo } from "react";
 import { useFormik } from "formik";
-import { UserRegistrationData } from "@/businessLogic/api/auth/interfaces";
+import { UserRegistrationData } from "@/logic/api/auth/interfaces";
 import { registerFormValidator } from "@/components/RegisterForm/validator";
 import Input from "@/ui-kit/Input";
 import Button from "@/ui-kit/Button";

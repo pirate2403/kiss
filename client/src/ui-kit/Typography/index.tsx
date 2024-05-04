@@ -3,7 +3,7 @@ import cn from "classnames";
 
 type TypographyTag = "span" | "p" | "h1" | "h2";
 type TypographyVariant = "light" | "regular" | "medium" | "bold";
-type TypographyColor = "default" | "primary" | "white";
+type TypographyColor = "default" | "primary" | "white" | "brand";
 
 type TypographyComponentProps<T extends TypographyTag> = Omit<
   ComponentProps<T>,
@@ -33,6 +33,7 @@ const VARIANT_CLASS_NAMES = {
 const COLOR_CLASS_NAMES = {
   default: "text-gray-50",
   primary: "text-brand-green",
+  brand: "text-brand-green-2",
   white: "text-white",
 } as const;
 

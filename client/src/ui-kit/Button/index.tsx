@@ -2,14 +2,15 @@ import { ButtonHTMLAttributes, memo } from "react";
 import cn from "classnames";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  size?: "xs" | "s" | "l" | "xl";
-  customType?: "primary" | "secondary" | "danger";
+  size?: "xs" | "s" | "l" | "xl" | "content";
+  customType?: "primary" | "secondary" | "danger" | "ghost";
 }
 
 const CLASS_NAMES = {
   base: "rounded-[5px] p-bold active:brightness-95",
   disabled: "disabled:bg-gray-10 disabled:border-gray-10 disabled:text-gray-40",
   size: {
+    content: "w-fit px-[4px]",
     xs: "w-fit px-[4px] text-[8px] border-[1px]",
     s: "py-[10px] w-[129px] text-[12px] border-[1px]",
     l: "py-[24px] w-[210px] text-[18px] border-[2px]",
@@ -19,6 +20,7 @@ const CLASS_NAMES = {
     primary: "text-white bg-brand-green border-brand-green",
     secondary: "text-brand-green border-brand-green",
     danger: "text-white bg-brand-red-2 border-brand-red-2",
+    ghost: "bg-none border-none",
   },
 } as const;
 
@@ -37,6 +39,7 @@ function Button({
         CLASS_NAMES.size[size],
         CLASS_NAMES.type[customType],
         className,
+        "bg-none",
       )}
       {...props}
     >

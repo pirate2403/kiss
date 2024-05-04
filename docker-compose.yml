@@ -1,0 +1,17 @@
+version: '3'
+services:
+  server:
+    build: ./server
+    container_name: kiss_server
+    command: npm start
+    env_file:
+      - ./server/.env
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    depends_on:
+      - db
+
+  db:
+    image: mongo:latest
+    container_name: kiss_db

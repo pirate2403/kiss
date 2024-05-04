@@ -1,0 +1,7 @@
+.env
+.gitignore
+.eslintrc.json
+.prettierrc
+.idea
+dist
+node_modules

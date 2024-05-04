@@ -6,7 +6,7 @@ const CLASS_NAMES = {
   lg: "lg:grid-cols-12 lg:gap-x-[30px] lg:px-16",
   md: "md:grid-cols-6 md:gap-x-[24px] md:px-8",
   sm: "grid-cols-4 gap-x-[20px] px-5",
-  full: "h-[100%]",
+  full: "md:h-full lg:h-full",
 };
 
 interface Props {

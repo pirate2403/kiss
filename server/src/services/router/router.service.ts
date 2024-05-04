@@ -5,6 +5,7 @@ import { IRouter } from "../../interfaces/router.interface";
 import AuthRouter from "../../modules/auth/router/auth.router";
 import ErrorInterceptorMiddleware from "../../middlewares/error-interceptor.middleware";
 import { IMiddleware } from "../../interfaces/middleware.interfaces";
+import UserRouter from "../../modules/user/router/user.router";
 
 @singleton()
 class RouterService implements IRouterService {
@@ -17,8 +18,9 @@ class RouterService implements IRouterService {
     @inject(ErrorInterceptorMiddleware.token)
     private _errorInterceptorMiddleware: IMiddleware,
     @inject(AuthRouter.token) auth: IRouter,
+    @inject(UserRouter.token) user: IRouter,
   ) {
-    this._routers = [auth];
+    this._routers = [auth, user];
   }
 
   private _routers: IRouter[];

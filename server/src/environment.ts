@@ -12,4 +12,4 @@ export const REFRESH_TOKEN_SECRET =
   process.env.REFRESH_TOKEN_SECRET || "my_secret";
 
 export const PROD = Boolean(process.env.PROD) || false;
-export const ORIGIN = process.env.ORIGIN || ["http://localhost:3000"];
+export const ORIGIN = process.env.ORIGIN || ["http://localhost:3000/"];

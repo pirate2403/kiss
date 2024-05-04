@@ -1,4 +1,4 @@
-import { ROUTES } from "@/businessLogic/constants/routes";
+import { ROUTES } from "@/logic/constants/routes";
 import { transformPathNameToChunks } from "@/utils/transformPathNameToChunks";
 
 export function getPrevPathName(pathname: string): string {

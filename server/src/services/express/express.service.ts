@@ -19,6 +19,7 @@ class ExpressService implements IExpressService {
   ) {}
 
   start(): void {
+    console.log(ORIGIN);
     this._app.use(cookieParser());
     this._app.use(cors({ credentials: true, origin: ORIGIN }));
     this._app.use(bodyParser.json());

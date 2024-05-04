@@ -9,6 +9,7 @@ const config: Config = {
         // Brand
         "brand-black": "#333",
         "brand-green": "#6BC2BB",
+        "brand-green-20": "rgba(107, 194, 187, 0.20)",
         "brand-green-1": "#60AEA8",
         "brand-green-2": "#559B95",
         "brand-yellow": "#FFC639",
@@ -23,6 +24,7 @@ const config: Config = {
         "gray-20": "#CED2DB",
         "gray-30": "#B6BCC9",
         "gray-40": "#9EA5B8",
+        "gray-40-25": "rgba(158, 165, 184, 0.25)",
         "gray-50": "#858FA6",
         // Semantic
         message: "#4070F4",

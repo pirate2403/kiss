@@ -2,7 +2,7 @@ import { Router } from "express";
 import { inject, singleton } from "tsyringe";
 import { IRouter } from "../../../interfaces/router.interface";
 import { IController } from "../../../interfaces/controller.interfaces";
-import AuthController from "../controller/user.controller";
+import UserController from "../controller/user.controller";
 
 @singleton()
 class UserRouter implements IRouter {
@@ -11,7 +11,7 @@ class UserRouter implements IRouter {
   private _expressRouter: Router = Router();
 
   constructor(
-    @inject(AuthController.token)
+    @inject(UserController.token)
     private _userController: IController,
   ) {
     this._init();

@@ -15,6 +15,28 @@ body {
 }
 
 @layer components {
+    .sm-visible {
+        @apply block md:hidden lg:hidden;
+    }
+
+    .sm-hidden {
+        @apply hidden;
+        @apply md:block;
+        @apply lg:block;
+    }
+
+    .md-visible {
+        @apply hidden;
+        @apply md:block;
+        @apply lg:hidden;
+    }
+
+    .lg-visible {
+        @apply hidden;
+        @apply md:hidden;
+        @apply lg:block;
+    }
+
     .p-light {
         color: theme('colors.brand-black');
         font-weight: theme('fontWeight.light');

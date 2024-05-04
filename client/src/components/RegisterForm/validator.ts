@@ -1,6 +1,5 @@
-import { UserRegistrationData } from "@/businessLogic/api/auth/interfaces";
+import { UserRegistrationData } from "@/logic/api/auth/interfaces";
 import { isEmail, isLength } from "validator";
-import { isEmpty } from "lodash";
 
 export function registerFormValidator({
   email = "",
